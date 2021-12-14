@@ -1,0 +1,76 @@
+		    usertypes
+		   
+    	   agency(customer/Corporate/Agency)-- Customer-one record,AccountProfile(multiple) , 
+		                                       collection   :User(userType=agency, profileRef-->  collection : AgentProfile
+user 		
+
+			agent   singup -- data in     -- Collection User(userType=agent, profileRef --> 
+											 Collection   : AgentProfile    
+
+
+
+		    traveler  singup - data in    --  User ( usetype=traveler ,profileRef)  and  travelerprofile -done
+			
+			
+			
+			
+CustomerDefaultsConfig	:	
+{
+  
+  platform:'tripro',
+  distribution:'us',     
+  consolidator :'',
+  parentCustomerid:'',
+  dkformat:'C',
+  defaultPassword:'',
+}	
+
+Dkconfig - Refering  case and trips generation  --   T4   T3
+
+
+DATA-    customercollection   -- accountprofile  --     aggresso api integration  
+                              -- user 
+
+		
+agency enrollment request :
+   {
+					
+					"companyName" : " ",
+					"companyOwner" : "", 
+					"phonenumber":"",
+					"email" :"",
+					"password":"",
+					"firstName" : "",
+					"lastName" : "",					
+					"address" : "",
+					"consolidatorId" :""
+					"currency" :""
+					"platform" : " ",   case 1:  trippro   case : triplanet
+					"distribution" : "us", case 1 :us     case1: tp
+					"dkNumber" :"",
+					"userType" :"Agency"
+	}
+
+
+
+Agent enrollment request  
+					{
+						"customerId" : " ",					 
+						"phonenumber":"",
+						"email" :"",
+						"firstName" : "",
+						"lastName" : "",					
+						"address" : "",
+						"consolidatorId" :""
+						"currency" :""
+						"platform" : "TripPro",
+						"distribution" : "",
+						"dkNumber" :"",
+						"userType" :"Agent"
+					}		
+			
+			
+customer -- virtual -       admin -- agent (agency) 
+
+
+agent radhika  - amdin
